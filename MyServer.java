@@ -105,6 +105,7 @@ public class MyServer implements ActionListener
 						timestamp("!@Whisper from " + sender.toString() + ": " + message));
 				sender.sendMessage(
 						timestamp("!#Whisper to " + target + ": " + message));
+
 				return;
 			}
 		sender.sendMessage("Could not find user with name \"" + target + "\"");

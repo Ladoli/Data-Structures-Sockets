@@ -42,7 +42,9 @@ public class ClientGUI extends JFrame
 		setLayout(null);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	    viewStatus.setEditable(false);
+
 	    caret.setUpdatePolicy(DefaultCaret.ALWAYS_UPDATE);
+
 	    attach(ipLabel, 10,10, 40,30);
 	    attach(ipInput, 80, 10, 200,30);
 	    attach(portLabel, 350,10, 100,30);
@@ -167,10 +169,13 @@ public class ClientGUI extends JFrame
 					sendInput.setText("");
 					caret.setUpdatePolicy(DefaultCaret.ALWAYS_UPDATE);
 					viewStatus.setCaretPosition(DefaultCaret.ALWAYS_UPDATE);
+
+
 				}
 			}
 		}
 	}
+
 	
 	 void sendPM(String target, String a)
 	{
@@ -183,4 +188,5 @@ public class ClientGUI extends JFrame
 			}
 		
 	}
+
 }

@@ -1,1 +1,2 @@
-# Data-Structures-Sockets
+# Data Structures: Sockets
+Reinventing IRC

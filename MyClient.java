@@ -62,6 +62,7 @@ public class MyClient extends Thread
 					String[] clientList = rawList.split(",");
 					gui.setClientList(clientList);
 				}
+
 				else if (serverMsg.charAt(0)== '!' && serverMsg.charAt(1) == '@' )
 				{
 					
@@ -86,6 +87,7 @@ public class MyClient extends Thread
 					PMGUI pmWIN = new PMGUI(target, gui);
 					pmWIN.receivePM(serverMsg.substring(2));
 				}
+
 				else
 				{
 					gui.displayMessage(serverMsg);
